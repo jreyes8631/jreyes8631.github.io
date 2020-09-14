@@ -6,37 +6,7 @@ permalink:  using_activerecord_and_sinatra
 ---
 
 
-ActiveRecord and Sinatra changed my whole experience on how to start from scratch writing your code. Thank you, Brian Emory!
-
-When you first install corneal it will generate a directory structure:
-
-├── config.ru
-├── Gemfile
-├── Gemfile.lock
-├── Rakefile
-├── README
-├── app
-│   ├── controllers
-│   │   └── application_controller.rb
-│   ├── models
-│   └── views
-│       ├── layout.erb
-│       └── welcome.erb
-├── config
-│   ├── initializers
-│   └── environment.rb
-├── db
-│   └── migrate
-├── lib
-│   └── .gitkeep
-└── public
-|   ├── images
-|   ├── javascript
-|   └── stylesheets
-|       └── main.css
-└── spec
-    ├── application_controller_spec.rb
-    └── spec_helper.rb
+ActiveRecord and Sinatra changed my whole experience on how to start from scratch writing your code. but when I discover corneal it was a blessing. Thank you, Brian Emory!
 
 It is simple and amazing but, I did encounter some issues due to my inexperience.  I was installing a repo and then running corneal new name_of_my_app. I ended up with two folders with the same name and didn't know how to fix this. Eventually, with the try and repeat process and a tutorial on GitHub, I was able to start.
 
@@ -54,6 +24,7 @@ class User < ActiveRecord::Base
     has_many :reviews
     validates :email, presence: true, uniqueness: true
 end
+
  my movie model looks like this:
 
 class Movie < ActiveRecord::Base
@@ -63,4 +34,5 @@ class Movie < ActiveRecord::Base
   validates :description, presence: true
 end
 
-And there is more. I'm so happy for being part of this community and being able to build my path to a carrier that I actually enjoy.
+
+things where difficult at the beggining, but little by little the app growing. I'm so happy for being part of this community and being able to build my path to a carrier that I actually enjoy.

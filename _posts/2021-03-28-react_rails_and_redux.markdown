@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "React, Rails and Redux"
-date:       2021-03-28 13:50:22 +0000
+date:       2021-03-28 09:50:23 -0400
 permalink:  react_rails_and_redux
 ---
 

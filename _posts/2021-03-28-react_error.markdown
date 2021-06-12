@@ -125,9 +125,9 @@ case SUCCESSFULLY_LOADED_MOVIES:
 				
 	```
 	
-	After refacoring and chaging stuff around my code. that night I just pause it and when to sleep, and trust me guys, if you are burn out just take a break and you will see things clearly. After a few hours of sleep I came back and notice something on my mapStateToProps, if I am in the show page for movies I should be returning the state of a single movie and not all of them so i changed this line. 
+After refacoring and chaging stuff around my code. that night I just pause it and when to sleep, and trust me guys, if you are burn out just take a break and you will see things clearly. After a few hours of sleep I came back and notice something on my mapStateToProps, if I am in the show page for movies I should be returning the state of a single movie and not all of them so i changed this line. 
 	
-``movies: state.movies.movieList.find(movie => movie.id == movieId), to movie: state.movies.movieList.find(movie => movie.id == movieId)``
+```movies: state.movies.movieList.find(movie => movie.id == movieId), to movie: state.movies.movieList.find(movie => movie.id == movieId)```
 	
 the final result:
 
@@ -161,5 +161,6 @@ this is how it looks after it was fixed:
             }
         }
 			```
+			
 errors can be treaky and something there will not be clear enough. So unless like me be sure to plan out how your code will be working and dont burn yourself to much. We need to have a clear mindset to be able to function.
 

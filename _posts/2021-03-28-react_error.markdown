@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "React error"
-date:       2021-03-28 14:34:16 +0000
+date:       2021-03-28 10:34:17 -0400
 permalink:  react_error
 ---
 
@@ -125,7 +125,9 @@ case SUCCESSFULLY_LOADED_MOVIES:
 				
 	```
 	
-	After refacoring and chaging stuff around my code. that night I just pause it and when to sleep, and trust me guys, if you are burn out just take a break and you will see things clearly. After a few hours of sleep I came back and notice something on my mapStateToProps, if I am in the show page for movies I should be returning the state of a single movie and not all of them so i changed this line ```movies: state.movies.movieList.find(movie => movie.id == movieId), to movie: state.movies.movieList.find(movie => movie.id == movieId) ```
+	After refacoring and chaging stuff around my code. that night I just pause it and when to sleep, and trust me guys, if you are burn out just take a break and you will see things clearly. After a few hours of sleep I came back and notice something on my mapStateToProps, if I am in the show page for movies I should be returning the state of a single movie and not all of them so i changed this line. 
+	
+``movies: state.movies.movieList.find(movie => movie.id == movieId), to movie: state.movies.movieList.find(movie => movie.id == movieId)``
 	
 the final result:
 
@@ -142,7 +144,7 @@ the final result:
 };
 ```
 
-and on my reducers the actual case that was failing was ```  case SUCCESSFULLY_LOADED_MOVIE_REVIEWS:```
+and on my reducers the actual case that was failing was "case SUCCESSFULLY_LOADED_MOVIE_REVIEWS:"
 because i was returning the state as an object where the state was already an object and this was breaking my code.
 this is how it looks after it was fixed:
 

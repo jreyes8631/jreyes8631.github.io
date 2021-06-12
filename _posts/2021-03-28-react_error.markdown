@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "React error"
+title:      "There is a bug in my code."
 date:       2021-03-28 10:34:17 -0400
 permalink:  react_error
 ---
